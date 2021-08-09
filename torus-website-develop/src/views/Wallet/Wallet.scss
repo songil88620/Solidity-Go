@@ -1,0 +1,37 @@
+.v-btn {
+  text-transform: inherit;
+}
+
+.v-input.v-input--is-readonly {
+  .v-input__slot {
+    background: var(--v-disabled-base);
+  }
+}
+
+.theme--dark.v-input.v-input--is-readonly {
+  fieldset {
+    border-color: var(--v-disabled-base);
+  }
+}
+
+.v-text-field__suffix {
+  color: var(--v-text_2-base);
+  font-size: 16px;
+}
+
+.navbar-line {
+  box-sizing: border-box;
+  border: 1px solid #f2f2f2;
+  height: 2px;
+}
+
+body,
+html {
+  height: 100%;
+}
+
+@media only screen and (max-width: 599px) {
+  .container {
+    padding: 12px 0;
+  }
+}

@@ -1,0 +1,20 @@
+@mixin outlineTooltip() {
+  background: none;
+  border: 0;
+  z-index: 0;
+  padding: 0;
+  ::v-deep .outline-tooltip {
+    background-color: #fff;
+    border: 1px solid var(--v-torusBrand1-base);
+    color: var(--v-torusBrand1-base);
+    position: relative;
+    padding: 5px 16px;
+    border-radius: 4px;
+    &::after {
+      content: ' ';
+      position: absolute;
+      border-style: solid;
+      border-color: var(--v-torusBrand1-base) transparent transparent transparent;
+    }
+  }
+}

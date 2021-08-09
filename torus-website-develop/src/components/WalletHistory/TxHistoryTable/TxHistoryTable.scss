@@ -1,0 +1,56 @@
+.activity-table {
+  .text-successful,
+  .text-confirmed {
+    color: #2dcc70;
+  }
+
+  .text-denied,
+  .text-rejected,
+  .text-unapproved {
+    color: #e20d0d;
+  }
+
+  .text-pending,
+  .text-submitted {
+    color: #b3c0ce;
+  }
+
+  .text-gray {
+    color: #5c6c7f;
+  }
+
+  .v-data-table {
+    ::v-deep tr > td {
+      cursor: pointer;
+    }
+
+    ::v-deep tr.v-data-table__expanded__content {
+      box-shadow: none;
+    }
+
+    ::v-deep .address-col {
+      min-width: 150px;
+    }
+  }
+
+  ::v-deep .v-pagination__item,
+  ::v-deep .v-pagination__navigation {
+    border: 0;
+    background: none;
+    color: var(--v-torusFont1-base);
+    font-weight: 500;
+    box-shadow: none;
+    opacity: 0.7;
+    &.torusBrand1 {
+      background: none;
+      background-color: transparent !important;
+      color: var(--v-torusBrand1-base);
+      opacity: 1;
+    }
+  }
+
+  ::v-deep .v-data-iterator > div:not(.v-card) {
+    text-align: center;
+    padding-top: 20px;
+  }
+}
